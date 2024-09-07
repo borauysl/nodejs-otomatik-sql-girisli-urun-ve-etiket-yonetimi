@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>SQL Tablo Yönetimi</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Barkod</th>
+                    <th>İsim</th>
+                    <th>Fiyat</th>
+                    <th>Tür</th>
+                    <th>IP</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                {tableRows}
+            </tbody>
+        </table>
+
+        <!-- Yeni veri ekleme -->
+        <div class="add-data-form">
+            <h3>Yeni Veri Ekle</h3>
+            <form id="addForm" action="/add" method="POST" autocomplete="off">
+                <label for="urunBarkod">Ürün Barkod:</label>
+                <input type="text" id="urunBarkod" name="urunBarkod" required autocomplete="off">
+                <label for="urunTur">Ürün Tür:</label>
+                <input type="text" id="urunTur" name="urunTur" required autocomplete="off">
+                <label for="etiketIP">Etiket IP:</label>
+                <input type="text" id="etiketIP" name="etiketIP" required autocomplete="off">
+                <button type="submit">Ekle</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
