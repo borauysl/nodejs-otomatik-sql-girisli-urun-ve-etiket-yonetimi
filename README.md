@@ -9,3 +9,6 @@ dashboard çıktısı :
 
 
 uygulamamızda değiştirebilen ve eklenen değerler arasında sadece urunBarkod, urunTur ve etiketIP değerleri vardır. bunun sebebi etiketID pk olduğu için auto increment olarak çalışmaktadır bu sayede otomatik şekilde eklenen etiketlere id değeri verilmektedir. urunFiyat ve urunIsim değerleri de urunBarkod değeri sayesinde api consumer tarafından atanmaktadır veya değiştirildi ise güncellenmesini sağlamaktadır.
+
+localhost üzerinde çalıştırabilmek için vsc terminaline 
+node app.js yazmanız yeterli olacaktır.
